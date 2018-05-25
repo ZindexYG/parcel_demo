@@ -1,15 +1,34 @@
-body{
-  background-color: #21374B;
+:root {
+  --body_bg_color: #21374B
 }
-#parcel{
+
+body {
+  background-color: var(--body_bg_color);
+}
+
+#parcel {
   background-color: #21374B;
-  h1{
-    margin-top: 1rem;
+  h1 {
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-size: 48px;
     font-family: "Gill Sans", "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color:#E7DACB;
+    color: #E7DACB;
   }
+}
+
+@keyframes animationExample {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animateThis {
+  animation: animationExample 2s;
+  display: flex;
 }
